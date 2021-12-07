@@ -10,26 +10,6 @@
   --primary-font: "Roboto";
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-
 /*===Body styles start====*/
 body {
   background-color: #ffffff;
@@ -59,10 +39,8 @@ body {
 .hero-box {
   text-align: center;
   background-color: var(--background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
-/*outline: 2px solid red;*/
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -70,9 +48,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-
-  padding-top: 0px;
-  padding-bottom: 30px;
 }
 
 .btn {
@@ -84,36 +59,17 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  display: inline-block;
   width: 200px;
   height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--primary-bottom-color);
 }
-.container-header {
-  margin-left: 215px;
-  margin-right: 215px;
-}
-.container {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-}
-.container-dignity {
-  padding-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-}
-.container-portfolio {
-  margin-bottom: 10px;
-}
+
 .hidden,
-.visible {
+.visible,
+.container-name {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -122,22 +78,18 @@ body {
 .hidden {
   display: none;
 }
-.visible,
-.container-name {
-  margin-bottom: 50px;
-}
 
 .dignity-item {
   list-style-type: none;
 }
 .dignity-title {
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--primary-text-color);
-
-  margin-bottom: 10px;
 }
+
 .dignity-text {
   line-height: 1.71;
   color: var(--text-secondary-color);
@@ -148,20 +100,14 @@ body {
 .contacts {
   list-style-type: none;
 }
-.team-member-img {
-  margin-bottom: 30px;
-}
 
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 10px;
 }
 .team-member-position {
   font-size: 16px;
   color: var(--text-secondary-color);
-
-  margin-bottom: 30px;
 }
 
 .site-nav .link,
@@ -196,24 +142,15 @@ body {
   color: var(--accent-color);
 }
 
-.example-img {
-  padding-bottom: 20px;
-}
 .example-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  padding-bottom: 4px;
-  padding-left: 24px;
 }
 .example-name {
   color: var(--text-secondary-color);
   font-size: 16px;
   line-height: 1.87;
-
-  padding-bottom: 20px;
-  padding-left: 24px;
 }
 
 button {
@@ -230,9 +167,6 @@ button {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  padding: 6px 22px;
   height: 38px;
 }
 
@@ -240,10 +174,6 @@ button {
 .btn-list button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
-}
-
-.btn-list {
-  margin-bottom: 50px;
 }
 
 .example-list,
@@ -256,16 +186,12 @@ button {
 footer {
   font-family: var(--primary-font), sans-serif;
   background-color: var(--background-color);
-  padding-left: 215px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .address-list [href] {
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
-  display: inline-block;
 }
 .address-mail,
 .address-tel {
@@ -281,12 +207,4 @@ footer {
 .address-list [href]:focus,
 .address-list [href]:hover {
   color: #ffffff;
-}
-.logo-footer {
-  padding-bottom: 20px;
-  display: inline-block;
-}
-.address-map,
-.address-mail {
-  padding-bottom: 9px;
 }
